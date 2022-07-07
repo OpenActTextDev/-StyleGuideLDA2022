@@ -1,0 +1,13 @@
+book_filename: "Style Guide for LDA"
+output_dir: "docs"
+rmd_files: ["index.Rmd", 
+          "References/Glossary.Rmd",
+          "AuthorTemplate.Rmd", 
+          "Interactive.Rmd", 
+          "Elements.Rmd", 
+          "NotationConventions.Rmd", 
+          "Glossary.Rmd",  
+          "References.Rmd"]
+language:
+  ui:
+    chapter_name: "Chapter "
