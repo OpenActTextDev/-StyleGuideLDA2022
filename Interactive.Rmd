@@ -1,6 +1,8 @@
 
 # Interactive Book Features  {#ChapInteractive}
 
+As of 2022, we have a separate document entitled [Interactive Features of Open Actuarial Textbooks](https://openacttextdev.github.io/InteractiveFeatures/index.html) that describes additional tools developed and experiments conducted to promote interactive features. This chapter should be read in conjunction with that document.
+
 An advantage of publishing on the web is that we can produce an online version that contains many interactive objects such as quizzes, computer demonstrations, interactive graphs, video, and the like, to promote **deeper learning**.
 
 We want viewers to interact with the book; it is **not** written to accommodate the “armchair reader,” that is, one who passively reads and does not get involved by attempting the exercises in the text. Consider an analogy to sports; there is a great deal that you can learn about the game just by watching. However, if you want to sharpen your skills, then you have to go out and play the game. 

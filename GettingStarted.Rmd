@@ -1,0 +1,41 @@
+
+# Getting Started
+
+Most authors and other developers will be working with a current version of the text. So, to make this happen, we assume that you have a bit of familiarity with `R`. The book is hosted by Github and we do *not* assume that you are familiar with this code hosting platform for version control and collaboration. 
+
+### What Features of  **R** are Needed
+
+For `R`, we are using this statistical software language for word-processing/typesetting and so we need three features:
+
+1.  We are using `R` 's version of markdown, a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using `R` Markdown see <http://rmarkdown.rstudio.com>.
+2.  For the development environment, we assume that you are working with [R Studio](https://www.rstudio.com/). Other development environments are possible, but this one is free, easy-to-use and an industry standard.
+3.  R markdown and R Studio allows one to easily write papers or book chapters. We need to string together the chapters to form a book and for this we use the `R` package `bookdown`.
+
+So, to get started, first get reasonably recent versions of R and Rstudio. Sometimes, there can be conflicts if you are running very old versions these products. 
+
+### Download and edit a local copy of the book {-}
+
+Next, you will want to modify the source code (the .Rmd files) of a chapter. To do this, you should:
+
+
+1.  Download a copy of the book. Go to Github, https://github.com/OpenActTextDev/LDA_Ed2, hit the green "Code" button, download a .zip file and uncompress it.
+2.  Open R-studio, go to "File==>Open Project". From the folder you just downloaded and uncompressed, select "LDA_Ed2.Rproj".
+3.  In R studio editor, open the file "Packages.Rmd" from the folder "References" (but do not knit it). These are the packages that will be called when you compile the book, so install them now if needed.
+4.  In R-studio, go to the upper right tab, hit "Build". This brings up a "Build Book" tab. Click the down arrow to the right and select "bookdown::gitbook". This starts the compile process.
+5.  Upon successful compile, you should see a preview of the book. If it gets lost, go to the "docs" subfolder and open "index.html" in a browser. Hopefully, you will see the compiled book.
+6.  As you edit the book, go to the file "_bookdown.yml". This allows you to select the .Rmd files (and the order) that you wish to appear in the book. 
+    *  A good strategy is to retain the beginning and ending files but comment out all of the chapters except the one that you are editing.
+    *  The chapter (source) files are in the "Chapter" folder.
+    *  In R-studio's editor, use the pound/hash-tag sign (#) at the beginning of a line to comment out that line.
+
+
+### Modify the Chapter
+
+This is the part that should take by far the longest amount of time. Not the coding but thinking about how to explain the analytics of loss data to readers. If you are not familiar with writing in `R`, the examples already in the book should get you started. See also the chapter on writing samples, Chapter \@ref(ChapSampleSection). For math, you can use a search engine (e.g., Google) to find the latex code for symbols, see also the *Conventions for Notation* Chapter \@ref(ChapNotationConvention). And naturally, do not hesitate to ask for help if you get stuck.
+
+
+### To Wrap Up
+
+When you are happy with the modifications, you can simply email the new version of the source code (the .Rmd file) to Jed Frees <jfrees@bus.wisc.edu>.
+
+Jed (or designee) will take the source code, re-compile the book, and then port the new code and new version of the book to our development site on Github. If you are familiar with Github, then it is not too difficult to do so yourself and we can give you permissions to do so. But, for most people, it is not worth your time to learn how to do this part - not to worry about it.

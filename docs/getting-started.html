@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>References | Style Guide for Loss Data Analytics</title>
+  <title>Chapter 1 Getting Started | Style Guide for Loss Data Analytics</title>
   <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="References | Style Guide for Loss Data Analytics" />
+  <meta property="og:title" content="Chapter 1 Getting Started | Style Guide for Loss Data Analytics" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="References | Style Guide for Loss Data Analytics" />
+  <meta name="twitter:title" content="Chapter 1 Getting Started | Style Guide for Loss Data Analytics" />
   
   <meta name="twitter:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="setting-up-a-glossary.html"/>
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="ChapSampleSection.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -412,38 +412,54 @@ document.getElementById("defaultOpen").click();
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
-
-<div id="refs" class="references">
-<div id="ref-abadir2002notation">
-<p>Abadir, Karim, and Jan Magnus. 2002. “Notation in Econometrics: A Proposal for a Standard.” <em>The Econometrics Journal</em> 5 (1): 76–90.</p>
+<div id="getting-started" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Getting Started</h1>
+<p>Most authors and other developers will be working with a current version of the text. So, to make this happen, we assume that you have a bit of familiarity with <code>R</code>. The book is hosted by Github and we do <em>not</em> assume that you are familiar with this code hosting platform for version control and collaboration.</p>
+<div id="what-features-of-r-are-needed" class="section level3">
+<h3><span class="header-section-number">1.0.1</span> What Features of <strong>R</strong> are Needed</h3>
+<p>For <code>R</code>, we are using this statistical software language for word-processing/typesetting and so we need three features:</p>
+<ol style="list-style-type: decimal">
+<li>We are using <code>R</code> ’s version of markdown, a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using <code>R</code> Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</li>
+<li>For the development environment, we assume that you are working with <a href="https://www.rstudio.com/">R Studio</a>. Other development environments are possible, but this one is free, easy-to-use and an industry standard.</li>
+<li>R markdown and R Studio allows one to easily write papers or book chapters. We need to string together the chapters to form a book and for this we use the <code>R</code> package <code>bookdown</code>.</li>
+</ol>
+<p>So, to get started, first get reasonably recent versions of R and Rstudio. Sometimes, there can be conflicts if you are running very old versions these products.</p>
 </div>
-<div id="ref-boehm1975thoughts">
-<p>Boehm, C, J Engelfriet, M Helbig, A IM Kool, P Leepin, E Neuburger, and AD Wilkie. 1975. “Thoughts on the Harmonization of Some Proposals for a New International Actuarial Notation.” <em>Blätter Der DGVFM</em> 12 (2): 99–129.</p>
+<div id="download-and-edit-a-local-copy-of-the-book" class="section level3 unnumbered">
+<h3>Download and edit a local copy of the book</h3>
+<p>Next, you will want to modify the source code (the .Rmd files) of a chapter. To do this, you should:</p>
+<ol style="list-style-type: decimal">
+<li>Download a copy of the book. Go to Github, <a href="https://github.com/OpenActTextDev/LDA_Ed2" class="uri">https://github.com/OpenActTextDev/LDA_Ed2</a>, hit the green “Code” button, download a .zip file and uncompress it.</li>
+<li>Open R-studio, go to “File==&gt;Open Project”. From the folder you just downloaded and uncompressed, select “LDA_Ed2.Rproj”.</li>
+<li>In R studio editor, open the file “Packages.Rmd” from the folder “References” (but do not knit it). These are the packages that will be called when you compile the book, so install them now if needed.</li>
+<li>In R-studio, go to the upper right tab, hit “Build”. This brings up a “Build Book” tab. Click the down arrow to the right and select “bookdown::gitbook”. This starts the compile process.</li>
+<li>Upon successful compile, you should see a preview of the book. If it gets lost, go to the “docs” subfolder and open “index.html” in a browser. Hopefully, you will see the compiled book.</li>
+<li>As you edit the book, go to the file "_bookdown.yml". This allows you to select the .Rmd files (and the order) that you wish to appear in the book.
+<ul>
+<li>A good strategy is to retain the beginning and ending files but comment out all of the chapters except the one that you are editing.</li>
+<li>The chapter (source) files are in the “Chapter” folder.</li>
+<li>In R-studio’s editor, use the pound/hash-tag sign (#) at the beginning of a line to comment out that line.</li>
+</ul></li>
+</ol>
 </div>
-<div id="ref-halperin1965recommended">
-<p>Halperin, Max, Herman O Hartley, and Paul G Hoel. 1965. “Recommended Standards for Statistical Symbols and Notation: Copss Committee on Symbols and Notation.” <em>The American Statistician</em> 19 (3): 12–14.</p>
+<div id="modify-the-chapter" class="section level3">
+<h3><span class="header-section-number">1.0.2</span> Modify the Chapter</h3>
+<p>This is the part that should take by far the longest amount of time. Not the coding but thinking about how to explain the analytics of loss data to readers. If you are not familiar with writing in <code>R</code>, the examples already in the book should get you started. See also the chapter on writing samples, Chapter <a href="ChapSampleSection.html#ChapSampleSection">2</a>. For math, you can use a search engine (e.g., Google) to find the latex code for symbols, see also the <em>Conventions for Notation</em> Chapter <a href="ChapNotationConvention.html#ChapNotationConvention">5</a>. And naturally, do not hesitate to ask for help if you get stuck.</p>
 </div>
-<div id="ref-xie2015">
-<p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.name/knitr/">http://yihui.name/knitr/</a>.</p>
+<div id="to-wrap-up" class="section level3">
+<h3><span class="header-section-number">1.0.3</span> To Wrap Up</h3>
+<p>When you are happy with the modifications, you can simply email the new version of the source code (the .Rmd file) to Jed Frees <a href="mailto:jfrees@bus.wisc.edu" class="email">jfrees@bus.wisc.edu</a>.</p>
+<p>Jed (or designee) will take the source code, re-compile the book, and then port the new code and new version of the book to our development site on Github. If you are familiar with Github, then it is not too difficult to do so yourself and we can give you permissions to do so. But, for most people, it is not worth your time to learn how to do this part - not to worry about it.</p>
+
 </div>
 </div>
-</div>
-
-
-
-
-
-
-
             </section>
 
           </div>
         </div>
       </div>
-<a href="setting-up-a-glossary.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="ChapSampleSection.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
