@@ -1,1 +1,1 @@
-[Online version of the Style Guide](https://ewfrees.github.io/StyleGuideLDA/index.html)
+[Online version of the Style Guide](https://openacttextdev.github.io/StyleGuideLDA2022/)
