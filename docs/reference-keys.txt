@@ -2,9 +2,6 @@ eq:ExampleEquation
 fig:EDFToy
 fig:ExampleFigure
 getting-started
-what-features-of-r-are-needed
-modify-the-chapter
-to-wrap-up
 ChapSampleSection
 S:SectionLabels
 equation-references

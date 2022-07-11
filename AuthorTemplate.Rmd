@@ -56,7 +56,7 @@ We  want our viewers to understand the underpinnings of the theory (the old anal
 Make sure that contributors are listed at the end of the chapter. The following provides an example.
 
 ```
-####Contributors {-}
+#### Contributors {-}
 
 - Edward W. (Jed) Frees, University of Wisconsin-Madison, 
 is the principal author of the initital version of this chapter. 
