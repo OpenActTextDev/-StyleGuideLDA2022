@@ -4,9 +4,9 @@ rmd_files: ["index.Rmd",
           "References/Glossary.Rmd",
           "GettingStarted.Rmd",
           "Elements.Rmd", 
+          "NotationConventions.Rmd",           
           "AuthorTemplate.Rmd", 
           "Interactive.Rmd", 
-          "NotationConventions.Rmd", 
           "Glossary.Rmd",  
           "References.Rmd"]
 language:

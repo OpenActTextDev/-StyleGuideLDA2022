@@ -21,6 +21,12 @@ glossary-conventions
 glossary-terms-with-multiple-definitions
 including-chapter-examples-and-r-code
 S:Links
+ChapNotationConvention
+S:General
+S:Abbreviations
+S:StatSymbols
+S:Symbols
+further-readings
 chapter-structure
 chapter-preview-and-learning-objectives
 main-body
@@ -35,12 +41,6 @@ examples-and-exercises
 statistical-code
 other-interactive-features
 additional-book-resources-supporting-each-chapter
-ChapNotationConvention
-S:General
-S:Abbreviations
-S:StatSymbols
-S:Symbols
-further-readings
 setting-up-a-glossary
 csv-file-setup
 terms-and-definitions-by-chapter

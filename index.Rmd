@@ -20,11 +20,10 @@ options(bookdown.render.file.scope = FALSE)
 
 It is important for chapters in the *Open Actuarial Textbooks* project to have a consistent look and feel. The *Style Guide for Loss Data Analytics* aims to assist contributors in developing chapters consistently throughout the *Loss Data Analytics* book. 
 
-This guide is set up as sample chapters containing 
+The first three chapters will be useful for authors revising chapters in 2022.
 
-- information regarding suitable content for a chapter, 
-- methods to implement chapter elements and 
-- conventions for consistent notation.
+The second three chapters are more geared for the development of new chapters or new open actuarial textbooks.
+
 
 
 
