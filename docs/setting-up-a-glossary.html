@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Setting up a Glossary | Style Guide for Loss Data Analytics</title>
   <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Setting up a Glossary | Style Guide for Loss Data Analytics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   
@@ -32,7 +31,8 @@
   
 <link rel="prev" href="ChapInteractive.html"/>
 <link rel="next" href="references.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,8 +48,9 @@
 
 
 
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <!-- Mathjax -->
@@ -311,6 +312,29 @@ document.getElementById("defaultOpen").click();
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -328,64 +352,80 @@ document.getElementById("defaultOpen").click();
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
-<li><a href="getting-started.html#what-features-of-r-are-needed">What Features of <strong>R</strong> are Needed</a></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#what-features-of-r-are-needed"><i class="fa fa-check"></i>What Features of <strong>R</strong> are Needed</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#download-and-edit-a-local-copy-of-the-book"><i class="fa fa-check"></i>Download and edit a local copy of the book</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#modify-the-chapter"><i class="fa fa-check"></i>Modify the Chapter</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#to-wrap-up"><i class="fa fa-check"></i>To Wrap Up</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a><ul>
+<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:SectionLabels"><i class="fa fa-check"></i><b>2.1</b> Section Labels and Learning Objectives</a></li>
 <li class="chapter" data-level="2.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#equation-references"><i class="fa fa-check"></i><b>2.2</b> Equation References</a></li>
 <li class="chapter" data-level="2.3" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#in-text-citations"><i class="fa fa-check"></i><b>2.3</b> In-text Citations</a></li>
-<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a><ul>
+<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a>
+<ul>
 <li class="chapter" data-level="2.4.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#latex-generated-table"><i class="fa fa-check"></i><b>2.4.1</b> Latex Generated Table</a></li>
 <li class="chapter" data-level="2.4.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#table-generated-by-r"><i class="fa fa-check"></i><b>2.4.2</b> Table Generated by <code>R</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a><ul>
+<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-generated-by-r"><i class="fa fa-check"></i><b>2.5.1</b> Figures Generated by <code>R</code></a></li>
 <li class="chapter" data-level="2.5.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-not-generated-by-r"><i class="fa fa-check"></i><b>2.5.2</b> Figures Not Generated by <code>R</code></a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-footnotes"><i class="fa fa-check"></i><b>2.6</b> Including Footnotes</a></li>
-<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a><ul>
+<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-conventions"><i class="fa fa-check"></i><b>2.7.1</b> Glossary Conventions</a></li>
 <li class="chapter" data-level="2.7.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-terms-with-multiple-definitions"><i class="fa fa-check"></i><b>2.7.2</b> Glossary Terms with Multiple Definitions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-chapter-examples-and-r-code"><i class="fa fa-check"></i><b>2.8</b> Including Chapter Examples and R Code</a></li>
 <li class="chapter" data-level="2.9" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:Links"><i class="fa fa-check"></i><b>2.9</b> Useful Links</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a><ul>
+<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:General"><i class="fa fa-check"></i><b>3.1</b> General Conventions</a></li>
 <li class="chapter" data-level="3.2" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Abbreviations"><i class="fa fa-check"></i><b>3.2</b> Abbreviations</a></li>
 <li class="chapter" data-level="3.3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:StatSymbols"><i class="fa fa-check"></i><b>3.3</b> Common Statistical Symbols and Operators</a></li>
 <li class="chapter" data-level="3.4" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Symbols"><i class="fa fa-check"></i><b>3.4</b> Common Mathematical Symbols and Functions</a></li>
 <li class="chapter" data-level="3.5" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#further-readings"><i class="fa fa-check"></i><b>3.5</b> Further Readings</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a><ul>
+<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#chapter-preview-and-learning-objectives"><i class="fa fa-check"></i><b>4.1</b> Chapter Preview and Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a><ul>
+<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="chapter-structure.html"><a href="chapter-structure.html#what-to-include"><i class="fa fa-check"></i><b>4.2.1</b> What to Include</a></li>
 <li class="chapter" data-level="4.2.2" data-path="chapter-structure.html"><a href="chapter-structure.html#what-not-to-include"><i class="fa fa-check"></i><b>4.2.2</b> What Not to Include</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="chapter-structure.html"><a href="chapter-structure.html#technical-supplements"><i class="fa fa-check"></i><b>4.3</b> Technical Supplements</a></li>
-<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a><ul>
+<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#contributors"><i class="fa fa-check"></i><b>4.4.1</b> Contributors</a></li>
 <li class="chapter" data-level="4.4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#further-reading-and-references"><i class="fa fa-check"></i><b>4.4.2</b> Further Reading and References</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a><ul>
+<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#examples-and-exercises"><i class="fa fa-check"></i><b>5.1</b> Examples and Exercises</a></li>
 <li class="chapter" data-level="5.2" data-path="ChapInteractive.html"><a href="ChapInteractive.html#statistical-code"><i class="fa fa-check"></i><b>5.2</b> Statistical Code</a></li>
-<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a></li>
+<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#creating-and-modifying-end-of-the-section-quizzes"><i class="fa fa-check"></i><b>5.3.1</b> Creating and Modifying End of the Section Quizzes</a></li>
+</ul></li>
 <li class="chapter" data-level="5.4" data-path="ChapInteractive.html"><a href="ChapInteractive.html#additional-book-resources-supporting-each-chapter"><i class="fa fa-check"></i><b>5.4</b> Additional Book Resources Supporting Each Chapter</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a><ul>
+<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#csv-file-setup"><i class="fa fa-check"></i><b>6.1</b> csv File Setup</a></li>
-<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a><ul>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>6.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>6.3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a><ul>
+<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#repository-creation-to-supplement-a-book"><i class="fa fa-check"></i><b>6.4.1</b> Repository Creation to Supplement a Book</a></li>
 <li class="chapter" data-level="6.4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-from-reviewers-readers"><i class="fa fa-check"></i><b>6.4.2</b> Feedback from Reviewers/ Readers</a></li>
 <li class="chapter" data-level="6.4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#collaboration-from-authors"><i class="fa fa-check"></i><b>6.4.3</b> Collaboration from Authors</a></li>
@@ -412,8 +452,8 @@ document.getElementById("defaultOpen").click();
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="setting-up-a-glossary" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Setting up a Glossary</h1>
+<div id="setting-up-a-glossary" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Chapter 6</span> Setting up a Glossary<a href="setting-up-a-glossary.html#setting-up-a-glossary" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <hr />
 <p>In this chapter, you learn how to:</p>
 <ul>
@@ -424,8 +464,8 @@ document.getElementById("defaultOpen").click();
 </ul>
 <hr />
 <p>A glossary can serve as a quick reference when the reader needs to recall a term’s definition or location within a book. This chapter can serve as a guide to setup a glossary in the <code>R Bookdown</code> environment. Please refer <a href="https://bookdown.org/yihui/bookdown/get-started.html">here</a> for a refresher on <code>R Bookdown</code> if necessary.</p>
-<div id="csv-file-setup" class="section level2">
-<h2><span class="header-section-number">6.1</span> csv File Setup</h2>
+<div id="csv-file-setup" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> csv File Setup<a href="setting-up-a-glossary.html#csv-file-setup" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The following outlines how we currently store our glossary:</p>
 <ol style="list-style-type: decimal">
 <li>Setup an excel file with 3 columns: Term, Definition, Chapter first defined.</li>
@@ -434,12 +474,12 @@ document.getElementById("defaultOpen").click();
 <li>Please note that if you make changes, do so in the Excel file not the csv file.</li>
 </ol>
 </div>
-<div id="terms-and-definitions-by-chapter" class="section level2">
-<h2><span class="header-section-number">6.2</span> Terms and Definitions by Chapter</h2>
+<div id="terms-and-definitions-by-chapter" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Terms and Definitions by Chapter<a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This section describes how to create a list of important terms and their definitions listed according to the chapters in which they are found.</p>
 <p>We use an example from the glossary of Loss Data Analytics. First we display the list of terms and definitions for Chapter 1 of the book followed by the code used to generate it.</p>
-<div id="chapter-1-introduction-to-loss-data-analytics" class="section level3">
-<h3><span class="header-section-number">6.2.1</span> Chapter 1 Introduction to Loss Data Analytics</h3>
+<div id="chapter-1-introduction-to-loss-data-analytics" class="section level3 hasAnchor" number="6.2.1">
+<h3><span class="header-section-number">6.2.1</span> Chapter 1 Introduction to Loss Data Analytics<a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <table style="width:88%;">
 <colgroup>
 <col width="41%" />
@@ -805,11 +845,10 @@ pander(final.table1.1)
 </code></pre>
 </div>
 </div>
-<div id="terms-and-chapter-first-defined" class="section level2">
-<h2><span class="header-section-number">6.3</span> Terms and Chapter First Defined</h2>
+<div id="terms-and-chapter-first-defined" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Terms and Chapter First Defined<a href="setting-up-a-glossary.html#terms-and-chapter-first-defined" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This section describes how to create a list of terms by the chapter in which they are first defined. Certain terms are defined multiple times throughout the book, so this list can help the reader refer to the chapter in which a term is first used and defined. The terms listed here are sorted in alphabetical order.</p>
 <p>We use an example from the glossary of Loss Data Analytics. Here, we use Chapter 1 and Chapter 2 of the book. We display the list of terms by chapter first defined then show the code used to generate it.</p>
-<pre><code>Warning: package &#39;dplyr&#39; was built under R version 3.6.3</code></pre>
 <table style="width:79%;">
 <colgroup>
 <col width="45%" />
@@ -1092,46 +1131,46 @@ names(final.table2) &lt;- c(&quot;Term&quot;, &quot;Chapter first defined&quot;)
 
 # Generate table --&gt; do not change
 pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
-<p>Note that some lines of code say “do not change”. This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table.</p>
+<p>Note that some lines of code say “do not change.” This is because these lines of code apply to the concatenated table which includes all the chapters. We need the concatenated table before we can sort all terms alphabetically and remove duplicates to generate the final table.</p>
 </div>
-<div id="glossary-on-github" class="section level2">
-<h2><span class="header-section-number">6.4</span> Glossary on GitHub</h2>
+<div id="glossary-on-github" class="section level2 hasAnchor" number="6.4">
+<h2><span class="header-section-number">6.4</span> Glossary on GitHub<a href="setting-up-a-glossary.html#glossary-on-github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This section describes how to setup a glossary repository on GitHub. By doing so, users can store the project, make changes, seek feedback and facilitate collaboration. We include suggestions for these different types of users:</p>
 <ul>
 <li>someone who wants to do a book like ours</li>
 <li>the reviewer/reader who simply wants to suggest altering or adding a definition</li>
 <li>a contributing author who needs to compile a csv file of definitions and include them into the chapter using tooltip</li>
 </ul>
-<div id="repository-creation-to-supplement-a-book" class="section level3">
-<h3><span class="header-section-number">6.4.1</span> Repository Creation to Supplement a Book</h3>
+<div id="repository-creation-to-supplement-a-book" class="section level3 hasAnchor" number="6.4.1">
+<h3><span class="header-section-number">6.4.1</span> Repository Creation to Supplement a Book<a href="setting-up-a-glossary.html#repository-creation-to-supplement-a-book" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>The following are suggestions on how to setup a repository on GitHub to store your glossary project. Here, we do not get into GitHub features in detail but we do suggest a place which you can refer to.</p>
 <ol style="list-style-type: decimal">
 <li>We suggest referring to <a href="http://happygitwithr.com/rstudio-git-github.html">Happy Git</a> to get started on setting up GitHub and linking it to R Studio.</li>
 <li>Once you have done so, you can store and update your glossary project on GitHub. Happy Git describes how you can make changes locally, commit and push the changes to GitHub.</li>
 </ol>
 </div>
-<div id="feedback-from-reviewers-readers" class="section level3">
-<h3><span class="header-section-number">6.4.2</span> Feedback from Reviewers/ Readers</h3>
+<div id="feedback-from-reviewers-readers" class="section level3 hasAnchor" number="6.4.2">
+<h3><span class="header-section-number">6.4.2</span> Feedback from Reviewers/ Readers<a href="setting-up-a-glossary.html#feedback-from-reviewers-readers" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>We assume that the author already has a glossary repository on GitHub in order to use the issue feature to receive feedback. The following is an excerpt out of the glossary for Loss Data Analytics on how readers can make suggestions:</p>
 <p>When using the glossary, we encourage the reader to provide feedback regarding the terms and their definitions. For example, if the reader feels that there is a better definition for a particular term, the following instructions outline how the reader can suggest improvements.</p>
 <ul>
 <li>First, open up the issues tab on our repository on GitHub.</li>
-<li>Click on “create an issue”.</li>
+<li>Click on “create an issue.”</li>
 <li>Indicate which chapters you want to make changes to in the title.</li>
 <li>Specify the terms and definitions you wish to change, add or remove.</li>
-<li>Click “Submit new issue”.</li>
+<li>Click “Submit new issue.”</li>
 </ul>
 </div>
-<div id="collaboration-from-authors" class="section level3">
-<h3><span class="header-section-number">6.4.3</span> Collaboration from Authors</h3>
-<div id="definitions-compilation" class="section level4">
-<h4><span class="header-section-number">6.4.3.1</span> Definitions Compilation</h4>
+<div id="collaboration-from-authors" class="section level3 hasAnchor" number="6.4.3">
+<h3><span class="header-section-number">6.4.3</span> Collaboration from Authors<a href="setting-up-a-glossary.html#collaboration-from-authors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="definitions-compilation" class="section level4 hasAnchor" number="6.4.3.1">
+<h4><span class="header-section-number">6.4.3.1</span> Definitions Compilation<a href="setting-up-a-glossary.html#definitions-compilation" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Aside from readers, collaborators can also contribute to the glossary. For example, professors can get authors to assist in compiling definitions.</p>
 <p>Collaborators can setup their own GitHub accounts. They can fork the project, make changes locally and make a pull request. The project owner can then merge these changes to update the project. These processes are outlined on <a href="http://happygitwithr.com/fork.html">Happy Git</a> as well.</p>
 <p>As mentioned previously, we suggest compiling definitions in the Excel file instead of csv. This is because making changes directly to the csv file may result in space distortions in the R output of the glossary.</p>
 </div>
-<div id="definitions-in-text-using-tooltip" class="section level4">
-<h4><span class="header-section-number">6.4.3.2</span> Definitions in-text using <code>Tooltip</code></h4>
+<div id="definitions-in-text-using-tooltip" class="section level4 hasAnchor" number="6.4.3.2">
+<h4><span class="header-section-number">6.4.3.2</span> Definitions in-text using <code>Tooltip</code><a href="setting-up-a-glossary.html#definitions-in-text-using-tooltip" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Further, in Loss Data Analytics, we use <code>tooltip</code> which allows readers to hover over a word in the text so that they may receive the definition as in the following example from the introduction chapter:</p>
 <p>When introducing data methods, we will focus on losses that arise from obligations in insurance contracts. This could be the amount of damage to one’s apartment under a renter’s insurance agreement, the amount needed to compensate someone that you hurt in a driving accident, and the like. We call these obligations <a href="#" class="tooltip" style="color:green"><em>insurance claims</em><span style="font-size:8pt"> An insurance claim is the compensation provided by the insurer for incurred hurt, loss, or damage that is covered by the policy.</span></a>. With this focus, we will be able to introduce generally applicable statistical tools and techniques in real-life situations.</p>
 <p>The following is the <code>tooltip</code> code associated with the above output:</p>
@@ -1152,7 +1191,6 @@ pander(distinct(final.table2, Term, .keep_all= TRUE))</code></pre>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -1171,6 +1209,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -1191,6 +1230,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Style Guide for LDA.pdf", "Style Guide for LDA.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

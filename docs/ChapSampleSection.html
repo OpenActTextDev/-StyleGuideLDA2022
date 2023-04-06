@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Samples of Writing in R bookdown | Style Guide for Loss Data Analytics</title>
   <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Samples of Writing in R bookdown | Style Guide for Loss Data Analytics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   
@@ -32,7 +31,8 @@
   
 <link rel="prev" href="getting-started.html"/>
 <link rel="next" href="ChapNotationConvention.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,8 +48,9 @@
 
 
 
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <!-- Mathjax -->
@@ -311,6 +312,29 @@ document.getElementById("defaultOpen").click();
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -328,64 +352,80 @@ document.getElementById("defaultOpen").click();
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
-<li><a href="getting-started.html#what-features-of-r-are-needed">What Features of <strong>R</strong> are Needed</a></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#what-features-of-r-are-needed"><i class="fa fa-check"></i>What Features of <strong>R</strong> are Needed</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#download-and-edit-a-local-copy-of-the-book"><i class="fa fa-check"></i>Download and edit a local copy of the book</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#modify-the-chapter"><i class="fa fa-check"></i>Modify the Chapter</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#to-wrap-up"><i class="fa fa-check"></i>To Wrap Up</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a><ul>
+<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:SectionLabels"><i class="fa fa-check"></i><b>2.1</b> Section Labels and Learning Objectives</a></li>
 <li class="chapter" data-level="2.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#equation-references"><i class="fa fa-check"></i><b>2.2</b> Equation References</a></li>
 <li class="chapter" data-level="2.3" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#in-text-citations"><i class="fa fa-check"></i><b>2.3</b> In-text Citations</a></li>
-<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a><ul>
+<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a>
+<ul>
 <li class="chapter" data-level="2.4.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#latex-generated-table"><i class="fa fa-check"></i><b>2.4.1</b> Latex Generated Table</a></li>
 <li class="chapter" data-level="2.4.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#table-generated-by-r"><i class="fa fa-check"></i><b>2.4.2</b> Table Generated by <code>R</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a><ul>
+<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-generated-by-r"><i class="fa fa-check"></i><b>2.5.1</b> Figures Generated by <code>R</code></a></li>
 <li class="chapter" data-level="2.5.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-not-generated-by-r"><i class="fa fa-check"></i><b>2.5.2</b> Figures Not Generated by <code>R</code></a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-footnotes"><i class="fa fa-check"></i><b>2.6</b> Including Footnotes</a></li>
-<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a><ul>
+<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-conventions"><i class="fa fa-check"></i><b>2.7.1</b> Glossary Conventions</a></li>
 <li class="chapter" data-level="2.7.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-terms-with-multiple-definitions"><i class="fa fa-check"></i><b>2.7.2</b> Glossary Terms with Multiple Definitions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-chapter-examples-and-r-code"><i class="fa fa-check"></i><b>2.8</b> Including Chapter Examples and R Code</a></li>
 <li class="chapter" data-level="2.9" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:Links"><i class="fa fa-check"></i><b>2.9</b> Useful Links</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a><ul>
+<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:General"><i class="fa fa-check"></i><b>3.1</b> General Conventions</a></li>
 <li class="chapter" data-level="3.2" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Abbreviations"><i class="fa fa-check"></i><b>3.2</b> Abbreviations</a></li>
 <li class="chapter" data-level="3.3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:StatSymbols"><i class="fa fa-check"></i><b>3.3</b> Common Statistical Symbols and Operators</a></li>
 <li class="chapter" data-level="3.4" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Symbols"><i class="fa fa-check"></i><b>3.4</b> Common Mathematical Symbols and Functions</a></li>
 <li class="chapter" data-level="3.5" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#further-readings"><i class="fa fa-check"></i><b>3.5</b> Further Readings</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a><ul>
+<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#chapter-preview-and-learning-objectives"><i class="fa fa-check"></i><b>4.1</b> Chapter Preview and Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a><ul>
+<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="chapter-structure.html"><a href="chapter-structure.html#what-to-include"><i class="fa fa-check"></i><b>4.2.1</b> What to Include</a></li>
 <li class="chapter" data-level="4.2.2" data-path="chapter-structure.html"><a href="chapter-structure.html#what-not-to-include"><i class="fa fa-check"></i><b>4.2.2</b> What Not to Include</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="chapter-structure.html"><a href="chapter-structure.html#technical-supplements"><i class="fa fa-check"></i><b>4.3</b> Technical Supplements</a></li>
-<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a><ul>
+<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#contributors"><i class="fa fa-check"></i><b>4.4.1</b> Contributors</a></li>
 <li class="chapter" data-level="4.4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#further-reading-and-references"><i class="fa fa-check"></i><b>4.4.2</b> Further Reading and References</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a><ul>
+<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#examples-and-exercises"><i class="fa fa-check"></i><b>5.1</b> Examples and Exercises</a></li>
 <li class="chapter" data-level="5.2" data-path="ChapInteractive.html"><a href="ChapInteractive.html#statistical-code"><i class="fa fa-check"></i><b>5.2</b> Statistical Code</a></li>
-<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a></li>
+<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#creating-and-modifying-end-of-the-section-quizzes"><i class="fa fa-check"></i><b>5.3.1</b> Creating and Modifying End of the Section Quizzes</a></li>
+</ul></li>
 <li class="chapter" data-level="5.4" data-path="ChapInteractive.html"><a href="ChapInteractive.html#additional-book-resources-supporting-each-chapter"><i class="fa fa-check"></i><b>5.4</b> Additional Book Resources Supporting Each Chapter</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a><ul>
+<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#csv-file-setup"><i class="fa fa-check"></i><b>6.1</b> csv File Setup</a></li>
-<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a><ul>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>6.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>6.3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a><ul>
+<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#repository-creation-to-supplement-a-book"><i class="fa fa-check"></i><b>6.4.1</b> Repository Creation to Supplement a Book</a></li>
 <li class="chapter" data-level="6.4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-from-reviewers-readers"><i class="fa fa-check"></i><b>6.4.2</b> Feedback from Reviewers/ Readers</a></li>
 <li class="chapter" data-level="6.4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#collaboration-from-authors"><i class="fa fa-check"></i><b>6.4.3</b> Collaboration from Authors</a></li>
@@ -412,8 +452,8 @@ document.getElementById("defaultOpen").click();
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ChapSampleSection" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Samples of Writing in <code>R bookdown</code></h1>
+<div id="ChapSampleSection" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Samples of Writing in <code>R bookdown</code><a href="ChapSampleSection.html#ChapSampleSection" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <hr />
 <p>In this chapter, you learn how to:</p>
 <ul>
@@ -426,8 +466,8 @@ document.getElementById("defaultOpen").click();
 </ul>
 <hr />
 <p>As we expand our contributor and reviewer base, it will be helpful to know more about the conventions used in the series regarding the details of <code>R markdown</code> and <code>R bookdown</code> used in the series. This chapter summarizes these conventions.</p>
-<div id="S:SectionLabels" class="section level2">
-<h2><span class="header-section-number">2.1</span> Section Labels and Learning Objectives</h2>
+<div id="S:SectionLabels" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Section Labels and Learning Objectives<a href="ChapSampleSection.html#S:SectionLabels" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The following shows how to code Section titles and refer to them.</p>
 <pre><code>## Section Labels {#S:SectionLabels}</code></pre>
 <p>With that reference, one can readily refer to Section <a href="ChapSampleSection.html#S:SectionLabels">2.1</a> in your text, as follows:</p>
@@ -447,8 +487,8 @@ In this chapter, you learn how to:
 
 </code></pre>
 </div>
-<div id="equation-references" class="section level2">
-<h2><span class="header-section-number">2.2</span> Equation References</h2>
+<div id="equation-references" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Equation References<a href="ChapSampleSection.html#equation-references" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Here is an example of a latex equation produced in <code>R markdown</code>, with reference number.</p>
 <p><span class="math display" id="eq:ExampleEquation">\[\begin{equation}
   x + y = 1  
@@ -465,20 +505,20 @@ In this chapter, you learn how to:
 referred to using the following code:
 </code></pre>
 </div>
-<div id="in-text-citations" class="section level2">
-<h2><span class="header-section-number">2.3</span> In-text Citations</h2>
-<p>Here is an example of an in-text citation made possible by <code>R bookdown</code> <span class="citation">(Xie <a href="references.html#ref-xie2015" role="doc-biblioref">2015</a>)</span>. This links to the bibliography where the full referece is displayed. As a convention we use the <em>APA</em> style citation.</p>
+<div id="in-text-citations" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> In-text Citations<a href="ChapSampleSection.html#in-text-citations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Here is an example of an in-text citation made possible by <code>R bookdown</code> <span class="citation">(<a href="references.html#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>. This links to the bibliography where the full referece is displayed. As a convention we use the <em>APA</em> style citation.</p>
 <pre><code>Here is an example of an in-text citation made possible by 
 `R bookdown` [@xie2015]. This links to the bibliography 
 where the full reference is displayed. 
 As a convention we use the *APA* style citation.
     </code></pre>
 </div>
-<div id="including-tables" class="section level2">
-<h2><span class="header-section-number">2.4</span> Including Tables</h2>
+<div id="including-tables" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Including Tables<a href="ChapSampleSection.html#including-tables" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We want to be able to include Latex tables (for mathematical type), as well as data-drive tables produced by <code>R</code>. In order to do that, we use html syntax in order to reference tables. This means that we have to number the tables by hand. Although a bit painful, it does gives us the flexibility needed.</p>
-<div id="latex-generated-table" class="section level3">
-<h3><span class="header-section-number">2.4.1</span> Latex Generated Table</h3>
+<div id="latex-generated-table" class="section level3 hasAnchor" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Latex Generated Table<a href="ChapSampleSection.html#latex-generated-table" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Start with a Latex generated table.</p>
 <p><a id=tab:2.1></a></p>
 <p>Table 2.1. <strong>An Example of Including Tables using Latex in an <code>R markdown</code> Document</strong></p>
@@ -515,8 +555,8 @@ non-R generated tables. For now, we reference them manually
 as in refer to [Table 2.1].
 </code></pre>
 </div>
-<div id="table-generated-by-r" class="section level3">
-<h3><span class="header-section-number">2.4.2</span> Table Generated by <code>R</code></h3>
+<div id="table-generated-by-r" class="section level3 hasAnchor" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Table Generated by <code>R</code><a href="ChapSampleSection.html#table-generated-by-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Now we give a data-driven table generated by <code>R</code> in <a href="#tab:2.2">Table 2.2</a>.</p>
 <p><a id=tab:2.2></a></p>
 <p>Table 2.2. <strong>An Example of Including Tables using <code>R</code> </strong></p>
@@ -565,14 +605,14 @@ kable_styling(knitr::kable(summaryOutput,digits=0,
 </code></pre>
 </div>
 </div>
-<div id="including-figures" class="section level2">
-<h2><span class="header-section-number">2.5</span> Including Figures</h2>
+<div id="including-figures" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Including Figures<a href="ChapSampleSection.html#including-figures" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>For figures, we can use the same reference/label system for figures produced by <code>R</code> and those external to <code>R</code>. This makes things easier than with tables.</p>
-<div id="figures-generated-by-r" class="section level3">
-<h3><span class="header-section-number">2.5.1</span> Figures Generated by <code>R</code></h3>
+<div id="figures-generated-by-r" class="section level3 hasAnchor" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Figures Generated by <code>R</code><a href="ChapSampleSection.html#figures-generated-by-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Most figures are generated using <code>R</code>. Here is an example.</p>
 
-<div class="figure" style="text-align: center"><span id="fig:EDFToy"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:EDFToy"></span>
 <img src="Style-Guide-for-LDA_files/figure-html/EDFToy-1.png" alt="Empirical Distribution Function of a Toy Example" width="60%" />
 <p class="caption">
 Figure 2.1: <strong>Empirical Distribution Function of a Toy Example</strong>
@@ -593,12 +633,12 @@ plot(PercentilesxExample, main = &quot;&quot;, xlab = &quot;x&quot;)
 <pre><code>Here is is the code for referencing the Figure \@ref(fig:EDFToy):
     </code></pre>
 </div>
-<div id="figures-not-generated-by-r" class="section level3">
-<h3><span class="header-section-number">2.5.2</span> Figures Not Generated by <code>R</code></h3>
-<p>For figures, we store the figures as png or jpeg files in a separate folder called “Figures”. Then we use <code>R</code> code to call those figures for display so that we can reference them.</p>
+<div id="figures-not-generated-by-r" class="section level3 hasAnchor" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Figures Not Generated by <code>R</code><a href="ChapSampleSection.html#figures-not-generated-by-r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For figures, we store the figures as png or jpeg files in a separate folder called “Figures.” Then we use <code>R</code> code to call those figures for display so that we can reference them.</p>
 <p>Here is such a figure:</p>
 
-<div class="figure" style="text-align: center"><span id="fig:ExampleFigure"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:ExampleFigure"></span>
 <img src="Figures/RStudio-Ball.png" alt="An Example of Including Figures in an R Markdown Document" width="5%" />
 <p class="caption">
 Figure 2.2: <strong>An Example of Including Figures in an R Markdown Document</strong>
@@ -617,21 +657,21 @@ knitr::include_graphics(&quot;Figures/RStudio-Ball.png&quot;)
 <pre><code>Here is is the code for referencing the Figure \@ref(fig:ExampleFigure):</code></pre>
 </div>
 </div>
-<div id="including-footnotes" class="section level2">
-<h2><span class="header-section-number">2.6</span> Including Footnotes</h2>
+<div id="including-footnotes" class="section level2 hasAnchor" number="2.6">
+<h2><span class="header-section-number">2.6</span> Including Footnotes<a href="ChapSampleSection.html#including-footnotes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Try to minimize the use of footnotes. But, if you need them, here is how you can include a footnote.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
 <pre><code>Here is how you can include a footnote [^1].
     
 [^1]: the footnote displays at the end of the chapter
     </code></pre>
 </div>
-<div id="defining-glossary-terms" class="section level2">
-<h2><span class="header-section-number">2.7</span> Defining Glossary Terms</h2>
+<div id="defining-glossary-terms" class="section level2 hasAnchor" number="2.7">
+<h2><span class="header-section-number">2.7</span> Defining Glossary Terms<a href="ChapSampleSection.html#defining-glossary-terms" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Use the <code>Gloss(term)</code> function to include a tooltip for technical phrases. <code>Gloss(term)</code> looks up the definition in <code>GlossFct.csv</code>. Accordingly, you can add new glossary terms for your chapter in the <code>csv</code> file.</p>
 <p>Here is how you add a tooltip:</p>
 <p>We can use the same <code>Gloss(term)</code> function to include tooltips for acronyms (e.g. iid) as listed in Section <a href="ChapNotationConvention.html#S:Abbreviations">3.2</a>.</p>
-<div id="glossary-conventions" class="section level3">
-<h3><span class="header-section-number">2.7.1</span> Glossary Conventions</h3>
+<div id="glossary-conventions" class="section level3 hasAnchor" number="2.7.1">
+<h3><span class="header-section-number">2.7.1</span> Glossary Conventions<a href="ChapSampleSection.html#glossary-conventions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>Include tooltip for a term only once in a chapter.</li>
 <li>Include tooltip when the term is defined. (e.g. “Frequency is …”)</li>
@@ -639,13 +679,13 @@ knitr::include_graphics(&quot;Figures/RStudio-Ball.png&quot;)
 <li>Only include tooltip in the Chapter Preview or in examples if the term is not defined elsewhere in the chapter.</li>
 </ul>
 </div>
-<div id="glossary-terms-with-multiple-definitions" class="section level3">
-<h3><span class="header-section-number">2.7.2</span> Glossary Terms with Multiple Definitions</h3>
+<div id="glossary-terms-with-multiple-definitions" class="section level3 hasAnchor" number="2.7.2">
+<h3><span class="header-section-number">2.7.2</span> Glossary Terms with Multiple Definitions<a href="ChapSampleSection.html#glossary-terms-with-multiple-definitions" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A term may carry multiple definitions across different sections. In this case, use <code>Gloss(term, section)</code>:</p>
 </div>
 </div>
-<div id="including-chapter-examples-and-r-code" class="section level2">
-<h2><span class="header-section-number">2.8</span> Including Chapter Examples and R Code</h2>
+<div id="including-chapter-examples-and-r-code" class="section level2 hasAnchor" number="2.8">
+<h2><span class="header-section-number">2.8</span> Including Chapter Examples and R Code<a href="ChapSampleSection.html#including-chapter-examples-and-r-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>As described in Section <a href="ChapInteractive.html#ChapInteractive">5</a>, chapter examples and R code allow readers to interact with the online version of the book.</p>
 <hr />
 <p>Here is how to add a chapter example:</p>
@@ -692,8 +732,8 @@ $$E = m c^2$$
 &lt;/div&gt;</code></pre>
 <p><code>HideExample</code>, <code>HideRCode</code>, and <code>HideProofTheory</code> are <code>R</code> functions that can hide these interactive features in the online html version. In the offline (pdf) version of the book, these are suppressed. All you need to do is change <code>eval = TRUE</code> in the file <code>PdfOutput.Rmd</code>.</p>
 </div>
-<div id="S:Links" class="section level2">
-<h2><span class="header-section-number">2.9</span> Useful Links</h2>
+<div id="S:Links" class="section level2 hasAnchor" number="2.9">
+<h2><span class="header-section-number">2.9</span> Useful Links<a href="ChapSampleSection.html#S:Links" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Naturally, you will want to learn more about coding in <code>R markdown</code>, <code>R bookdown</code> and so forth. The following provide some useful links for taking the next step.</p>
 <ul>
 <li><p>For an <code>R markdown</code> guide refer <a href="https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html">https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html</a>.</p></li>
@@ -722,7 +762,6 @@ $$E = m c^2$$
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -741,6 +780,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -761,6 +801,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Style Guide for LDA.pdf", "Style Guide for LDA.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

@@ -37,6 +37,9 @@ ChapInteractive
 examples-and-exercises
 statistical-code
 other-interactive-features
+creating-and-modifying-end-of-the-section-quizzes
+create-a-quiz
+modifying-a-quiz
 additional-book-resources-supporting-each-chapter
 setting-up-a-glossary
 csv-file-setup

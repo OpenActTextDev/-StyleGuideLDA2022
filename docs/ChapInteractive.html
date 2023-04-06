@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Interactive Book Features | Style Guide for Loss Data Analytics</title>
   <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Interactive Book Features | Style Guide for Loss Data Analytics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   
@@ -32,7 +31,8 @@
   
 <link rel="prev" href="chapter-structure.html"/>
 <link rel="next" href="setting-up-a-glossary.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,8 +48,9 @@
 
 
 
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <!-- Mathjax -->
@@ -311,6 +312,29 @@ document.getElementById("defaultOpen").click();
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -328,64 +352,80 @@ document.getElementById("defaultOpen").click();
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
-<li><a href="getting-started.html#what-features-of-r-are-needed">What Features of <strong>R</strong> are Needed</a></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#what-features-of-r-are-needed"><i class="fa fa-check"></i>What Features of <strong>R</strong> are Needed</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#download-and-edit-a-local-copy-of-the-book"><i class="fa fa-check"></i>Download and edit a local copy of the book</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#modify-the-chapter"><i class="fa fa-check"></i>Modify the Chapter</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#to-wrap-up"><i class="fa fa-check"></i>To Wrap Up</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a><ul>
+<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:SectionLabels"><i class="fa fa-check"></i><b>2.1</b> Section Labels and Learning Objectives</a></li>
 <li class="chapter" data-level="2.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#equation-references"><i class="fa fa-check"></i><b>2.2</b> Equation References</a></li>
 <li class="chapter" data-level="2.3" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#in-text-citations"><i class="fa fa-check"></i><b>2.3</b> In-text Citations</a></li>
-<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a><ul>
+<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a>
+<ul>
 <li class="chapter" data-level="2.4.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#latex-generated-table"><i class="fa fa-check"></i><b>2.4.1</b> Latex Generated Table</a></li>
 <li class="chapter" data-level="2.4.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#table-generated-by-r"><i class="fa fa-check"></i><b>2.4.2</b> Table Generated by <code>R</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a><ul>
+<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-generated-by-r"><i class="fa fa-check"></i><b>2.5.1</b> Figures Generated by <code>R</code></a></li>
 <li class="chapter" data-level="2.5.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-not-generated-by-r"><i class="fa fa-check"></i><b>2.5.2</b> Figures Not Generated by <code>R</code></a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-footnotes"><i class="fa fa-check"></i><b>2.6</b> Including Footnotes</a></li>
-<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a><ul>
+<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-conventions"><i class="fa fa-check"></i><b>2.7.1</b> Glossary Conventions</a></li>
 <li class="chapter" data-level="2.7.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-terms-with-multiple-definitions"><i class="fa fa-check"></i><b>2.7.2</b> Glossary Terms with Multiple Definitions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-chapter-examples-and-r-code"><i class="fa fa-check"></i><b>2.8</b> Including Chapter Examples and R Code</a></li>
 <li class="chapter" data-level="2.9" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:Links"><i class="fa fa-check"></i><b>2.9</b> Useful Links</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a><ul>
+<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:General"><i class="fa fa-check"></i><b>3.1</b> General Conventions</a></li>
 <li class="chapter" data-level="3.2" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Abbreviations"><i class="fa fa-check"></i><b>3.2</b> Abbreviations</a></li>
 <li class="chapter" data-level="3.3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:StatSymbols"><i class="fa fa-check"></i><b>3.3</b> Common Statistical Symbols and Operators</a></li>
 <li class="chapter" data-level="3.4" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Symbols"><i class="fa fa-check"></i><b>3.4</b> Common Mathematical Symbols and Functions</a></li>
 <li class="chapter" data-level="3.5" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#further-readings"><i class="fa fa-check"></i><b>3.5</b> Further Readings</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a><ul>
+<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#chapter-preview-and-learning-objectives"><i class="fa fa-check"></i><b>4.1</b> Chapter Preview and Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a><ul>
+<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="chapter-structure.html"><a href="chapter-structure.html#what-to-include"><i class="fa fa-check"></i><b>4.2.1</b> What to Include</a></li>
 <li class="chapter" data-level="4.2.2" data-path="chapter-structure.html"><a href="chapter-structure.html#what-not-to-include"><i class="fa fa-check"></i><b>4.2.2</b> What Not to Include</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="chapter-structure.html"><a href="chapter-structure.html#technical-supplements"><i class="fa fa-check"></i><b>4.3</b> Technical Supplements</a></li>
-<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a><ul>
+<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#contributors"><i class="fa fa-check"></i><b>4.4.1</b> Contributors</a></li>
 <li class="chapter" data-level="4.4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#further-reading-and-references"><i class="fa fa-check"></i><b>4.4.2</b> Further Reading and References</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a><ul>
+<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#examples-and-exercises"><i class="fa fa-check"></i><b>5.1</b> Examples and Exercises</a></li>
 <li class="chapter" data-level="5.2" data-path="ChapInteractive.html"><a href="ChapInteractive.html#statistical-code"><i class="fa fa-check"></i><b>5.2</b> Statistical Code</a></li>
-<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a></li>
+<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#creating-and-modifying-end-of-the-section-quizzes"><i class="fa fa-check"></i><b>5.3.1</b> Creating and Modifying End of the Section Quizzes</a></li>
+</ul></li>
 <li class="chapter" data-level="5.4" data-path="ChapInteractive.html"><a href="ChapInteractive.html#additional-book-resources-supporting-each-chapter"><i class="fa fa-check"></i><b>5.4</b> Additional Book Resources Supporting Each Chapter</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a><ul>
+<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#csv-file-setup"><i class="fa fa-check"></i><b>6.1</b> csv File Setup</a></li>
-<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a><ul>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>6.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>6.3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a><ul>
+<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#repository-creation-to-supplement-a-book"><i class="fa fa-check"></i><b>6.4.1</b> Repository Creation to Supplement a Book</a></li>
 <li class="chapter" data-level="6.4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-from-reviewers-readers"><i class="fa fa-check"></i><b>6.4.2</b> Feedback from Reviewers/ Readers</a></li>
 <li class="chapter" data-level="6.4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#collaboration-from-authors"><i class="fa fa-check"></i><b>6.4.3</b> Collaboration from Authors</a></li>
@@ -412,13 +452,13 @@ document.getElementById("defaultOpen").click();
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ChapInteractive" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Interactive Book Features</h1>
+<div id="ChapInteractive" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Interactive Book Features<a href="ChapInteractive.html#ChapInteractive" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>As of 2022, we have a separate document entitled <a href="https://openacttextdev.github.io/InteractiveFeatures/index.html">Interactive Features of Open Actuarial Textbooks</a> that describes additional tools developed and experiments conducted to promote interactive features. This chapter should be read in conjunction with that document.</p>
 <p>An advantage of publishing on the web is that we can produce an online version that contains many interactive objects such as quizzes, computer demonstrations, interactive graphs, video, and the like, to promote <strong>deeper learning</strong>.</p>
 <p>We want viewers to interact with the book; it is <strong>not</strong> written to accommodate the “armchair reader,” that is, one who passively reads and does not get involved by attempting the exercises in the text. Consider an analogy to sports; there is a great deal that you can learn about the game just by watching. However, if you want to sharpen your skills, then you have to go out and play the game.</p>
-<div id="examples-and-exercises" class="section level2">
-<h2><span class="header-section-number">5.1</span> Examples and Exercises</h2>
+<div id="examples-and-exercises" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Examples and Exercises<a href="ChapInteractive.html#examples-and-exercises" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Even for traditional offline (pdf) version of the book, we include problems that allow readers to develop their learning.</p>
 <p>Each chapter contains several “Examples” or “Exercises” - these are focused problems that generally ask the reader to do a calculation or provide an interpretation of a statistical issue. We call them “examples” when they appear in the main body of the text and “exercises” when they appear at the end of the chapter. The need for hand calculations has been advocated by Khamis (1991)<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. Many teachers have found it useful to practice the mechanics in order to provide a solid foundation. With this foundation, we can get on to the real business; interpreting data using statistical principles.</p>
 <p>We anticipate that substantial exercise banks will be built over time by users, professional associations, and those with commercial interests. When developing the chapter foundations, think about the following types of problems.</p>
@@ -429,8 +469,8 @@ document.getElementById("defaultOpen").click();
 </ul>
 <p>Examples and exercises are designed so that they illustrate a general analytics/statistical concept; they have the additional advantage in that they are often based on actuarial professional examinations and so provide readers with training for these assessment frameworks. Notably, <em>in the online version of the book, the solutions to the examples and exercises are hidden to encourage readers to actively solve (or at least consider) prior to revealing a solution.</em></p>
 </div>
-<div id="statistical-code" class="section level2">
-<h2><span class="header-section-number">5.2</span> Statistical Code</h2>
+<div id="statistical-code" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Statistical Code<a href="ChapInteractive.html#statistical-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>However, the limitation of exercise and examples done by hand is that they give <strong>little insight</strong> as to how the general analytics/statistical concepts can be used in applications or why more extensive treatments beyond the foundations would be needed. To address these limitations, throughout we include illustrate statistical code with sample (but real) datasets. The statistical language used throughout is <code>R</code>. For two reasons, the <code>R</code> code is hidden in the online version but can be interactively revealed but clicking a button.</p>
 <ul>
 <li>First, we want to focus on the analytics/statistical concepts and do not wish for readers to be distracted by software code that emphasizes implementation, not concepts.</li>
@@ -438,8 +478,8 @@ document.getElementById("defaultOpen").click();
 </ul>
 <p>Although we do not focus on developing <code>R</code> tutorials, we will provide guides and links to people who wish to learn <code>R</code>. Our focus is on teaching statistical methods and actuarial issues, not software. Over time, the project may also provide support for users of other software environments, such as Microsoft’s Excel or Python.</p>
 </div>
-<div id="other-interactive-features" class="section level2">
-<h2><span class="header-section-number">5.3</span> Other Interactive Features</h2>
+<div id="other-interactive-features" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Other Interactive Features<a href="ChapInteractive.html#other-interactive-features" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>A wonderful aspect of an online text is that we can readily incorporate other interactive features. In coming versions of the book, you can expect to see</p>
 <ul>
 <li>a glossary (hover the cursor over a technical word or phrase to reveal a definition),</li>
@@ -447,9 +487,32 @@ document.getElementById("defaultOpen").click();
 <li>end of the section quizzes that provide “low-level formative assessments” so that they reader can gauge his or her understanding of the material.</li>
 </ul>
 <p>Some of the support material associated with the book also emphasizes interactive aspects. For example, detailed <em>R code</em> allows readers to learn complex statistical routines and provides sample code so that users can develop their own libraries of useful routines. Another site will feature <code>R-Shiny</code>, an interactive graphic tool that provides dynamic graphing features. The concept of active learning promotes one of the deeper learning goals set forth by some educational leaders: The ability to learn how to learn independently.</p>
+<div id="creating-and-modifying-end-of-the-section-quizzes" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Creating and Modifying End of the Section Quizzes<a href="ChapInteractive.html#creating-and-modifying-end-of-the-section-quizzes" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>See <a href="https://openacttextdev.github.io/InteractiveFeatures/exercises-and-quizzes.html#Sec:EndSectionQuizzes">an example</a> for what we mean by an “end of the section” quiz.</p>
+<div id="create-a-quiz" class="section level4 hasAnchor" number="5.3.1.1">
+<h4><span class="header-section-number">5.3.1.1</span> Create a Quiz<a href="ChapInteractive.html#create-a-quiz" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>We use <a href="https://surveyjs.io/">surveyJS</a>, an open source JavaScript form builder library, to build these interactive quizzes. In the book, we use two content delivery systems for interactive features:</p>
+<ul>
+<li><a href="https://unpkg.com/">unpkg</a> is a fast, global content delivery network.</li>
+<li><a href="https://cdnjs.com/about">cdnjs</a> is a free and open source content delivery network (cdn).</li>
+</ul>
+<p>For example, one can go to the <a href="https://cdnjs.com/libraries/survey-jquery">site</a> for the code to access the <em>surveyJS</em> library.</p>
+<p>If you want to create quizzes from scratch, you can <a href="https://surveyjs.io/create-free-survey">start creating your own survey</a>.</p>
+<p>As alternatives, <code>R</code> has a number of packages for interactive learning. Probably the most widely known is <a href="https://rdrr.io/cran/learnr/">learnr</a>. However, this is a <code>shiny</code> based package that requires substantial bandwidth.</p>
+<p>Recently, an <code>R</code> package <code>webexercises</code> has been <a href="https://github.com/psyteachr/webexercises">developed</a>. It has fewer features than the <code>learnr</code> package but is more lightweight; “whereas {learnr} tutorials must be either hosted on a shiny server or run locally, <code>webexercises</code> creates standalone HTML files that require only a JavaScript-enabled browser.”</p>
+<p>We continue to use the <em>surveyJS</em> framework at this time because it is has a nice output for users. Note however that is more difficult to maintain and so we may switch to <code>webexercises</code> in the future.</p>
 </div>
-<div id="additional-book-resources-supporting-each-chapter" class="section level2">
-<h2><span class="header-section-number">5.4</span> Additional Book Resources Supporting Each Chapter</h2>
+<div id="modifying-a-quiz" class="section level4 hasAnchor" number="5.3.1.2">
+<h4><span class="header-section-number">5.3.1.2</span> Modifying a Quiz<a href="ChapInteractive.html#modifying-a-quiz" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>All of the javascript functions are defined in the <code>ShowHide2022.js</code> file - most authors will not need to change this.</p>
+<p>In the <code>Quiz</code> folder, you will find <code>html</code> files that refer to each end of the section quiz, e.g., <code>Quiz11.html</code> refers to quiz at the end of Section 1.1 (in Chapter 1). These files provide a bit of html code to display the quiz.</p>
+<p>Also in the <code>Quiz</code> folder is a subfolder <code>QuizJavaScript</code>. Here are javascript files, again one for each end of the section quiz, e.g., <code>Quiz11.js</code> refers to quiz at the end of Section 1.1 (in Chapter 1). These files provide the quiz questions in a very specific format required by <em>surveyJS</em>. It is not very flexible and difficult to alter the structure (without a good background in Javascript). However, the .js files are all text-based, and so are easy to modify, for authors interested only in updating/improving end of the section quizzes.</p>
+</div>
+</div>
+</div>
+<div id="additional-book-resources-supporting-each-chapter" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Additional Book Resources Supporting Each Chapter<a href="ChapInteractive.html#additional-book-resources-supporting-each-chapter" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We are hopeful that there will be several resources support the book that will appear outside of the chapter structure. Although not necessarily interactive, they will help develop users’ learning. These include:</p>
 <ul>
 <li><strong>Case Studies and Historical Vignettes.</strong> Similar to those appearing within the chapter, include short exercises/examples/special cases that can be readily solved by the viewer. These serve to reinforce concepts and provide benchmarks for understanding. Case studies can be used to emphasize different practices in different countries. Historical vignettes can be interesting in their own right and remind us all of the foundations of our discipline.</li>
@@ -475,7 +538,6 @@ document.getElementById("defaultOpen").click();
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -494,6 +556,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -514,6 +577,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Style Guide for LDA.pdf", "Style Guide for LDA.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

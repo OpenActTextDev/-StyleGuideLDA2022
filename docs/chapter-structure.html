@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 4 Chapter Structure | Style Guide for Loss Data Analytics</title>
   <meta name="description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 4 Chapter Structure | Style Guide for Loss Data Analytics" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a style guide to help authors write chapters for Loss Data Analytics" />
   
@@ -32,7 +31,8 @@
   
 <link rel="prev" href="ChapNotationConvention.html"/>
 <link rel="next" href="ChapInteractive.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -48,8 +48,9 @@
 
 
 
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <!-- Mathjax -->
@@ -311,6 +312,29 @@ document.getElementById("defaultOpen").click();
 
 
 
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
@@ -328,64 +352,80 @@ document.getElementById("defaultOpen").click();
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a><ul>
-<li><a href="getting-started.html#what-features-of-r-are-needed">What Features of <strong>R</strong> are Needed</a></li>
+<li class="chapter" data-level="1" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>1</b> Getting Started</a>
+<ul>
+<li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#what-features-of-r-are-needed"><i class="fa fa-check"></i>What Features of <strong>R</strong> are Needed</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#download-and-edit-a-local-copy-of-the-book"><i class="fa fa-check"></i>Download and edit a local copy of the book</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#modify-the-chapter"><i class="fa fa-check"></i>Modify the Chapter</a></li>
 <li class="chapter" data-level="" data-path="getting-started.html"><a href="getting-started.html#to-wrap-up"><i class="fa fa-check"></i>To Wrap Up</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a><ul>
+<li class="chapter" data-level="2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html"><i class="fa fa-check"></i><b>2</b> Samples of Writing in <code>R bookdown</code></a>
+<ul>
 <li class="chapter" data-level="2.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:SectionLabels"><i class="fa fa-check"></i><b>2.1</b> Section Labels and Learning Objectives</a></li>
 <li class="chapter" data-level="2.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#equation-references"><i class="fa fa-check"></i><b>2.2</b> Equation References</a></li>
 <li class="chapter" data-level="2.3" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#in-text-citations"><i class="fa fa-check"></i><b>2.3</b> In-text Citations</a></li>
-<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a><ul>
+<li class="chapter" data-level="2.4" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-tables"><i class="fa fa-check"></i><b>2.4</b> Including Tables</a>
+<ul>
 <li class="chapter" data-level="2.4.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#latex-generated-table"><i class="fa fa-check"></i><b>2.4.1</b> Latex Generated Table</a></li>
 <li class="chapter" data-level="2.4.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#table-generated-by-r"><i class="fa fa-check"></i><b>2.4.2</b> Table Generated by <code>R</code></a></li>
 </ul></li>
-<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a><ul>
+<li class="chapter" data-level="2.5" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-figures"><i class="fa fa-check"></i><b>2.5</b> Including Figures</a>
+<ul>
 <li class="chapter" data-level="2.5.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-generated-by-r"><i class="fa fa-check"></i><b>2.5.1</b> Figures Generated by <code>R</code></a></li>
 <li class="chapter" data-level="2.5.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#figures-not-generated-by-r"><i class="fa fa-check"></i><b>2.5.2</b> Figures Not Generated by <code>R</code></a></li>
 </ul></li>
 <li class="chapter" data-level="2.6" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-footnotes"><i class="fa fa-check"></i><b>2.6</b> Including Footnotes</a></li>
-<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a><ul>
+<li class="chapter" data-level="2.7" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#defining-glossary-terms"><i class="fa fa-check"></i><b>2.7</b> Defining Glossary Terms</a>
+<ul>
 <li class="chapter" data-level="2.7.1" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-conventions"><i class="fa fa-check"></i><b>2.7.1</b> Glossary Conventions</a></li>
 <li class="chapter" data-level="2.7.2" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#glossary-terms-with-multiple-definitions"><i class="fa fa-check"></i><b>2.7.2</b> Glossary Terms with Multiple Definitions</a></li>
 </ul></li>
 <li class="chapter" data-level="2.8" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#including-chapter-examples-and-r-code"><i class="fa fa-check"></i><b>2.8</b> Including Chapter Examples and R Code</a></li>
 <li class="chapter" data-level="2.9" data-path="ChapSampleSection.html"><a href="ChapSampleSection.html#S:Links"><i class="fa fa-check"></i><b>2.9</b> Useful Links</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a><ul>
+<li class="chapter" data-level="3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html"><i class="fa fa-check"></i><b>3</b> Conventions for Notation</a>
+<ul>
 <li class="chapter" data-level="3.1" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:General"><i class="fa fa-check"></i><b>3.1</b> General Conventions</a></li>
 <li class="chapter" data-level="3.2" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Abbreviations"><i class="fa fa-check"></i><b>3.2</b> Abbreviations</a></li>
 <li class="chapter" data-level="3.3" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:StatSymbols"><i class="fa fa-check"></i><b>3.3</b> Common Statistical Symbols and Operators</a></li>
 <li class="chapter" data-level="3.4" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#S:Symbols"><i class="fa fa-check"></i><b>3.4</b> Common Mathematical Symbols and Functions</a></li>
 <li class="chapter" data-level="3.5" data-path="ChapNotationConvention.html"><a href="ChapNotationConvention.html#further-readings"><i class="fa fa-check"></i><b>3.5</b> Further Readings</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a><ul>
+<li class="chapter" data-level="4" data-path="chapter-structure.html"><a href="chapter-structure.html"><i class="fa fa-check"></i><b>4</b> Chapter Structure</a>
+<ul>
 <li class="chapter" data-level="4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#chapter-preview-and-learning-objectives"><i class="fa fa-check"></i><b>4.1</b> Chapter Preview and Learning Objectives</a></li>
-<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a><ul>
+<li class="chapter" data-level="4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#main-body"><i class="fa fa-check"></i><b>4.2</b> Main Body</a>
+<ul>
 <li class="chapter" data-level="4.2.1" data-path="chapter-structure.html"><a href="chapter-structure.html#what-to-include"><i class="fa fa-check"></i><b>4.2.1</b> What to Include</a></li>
 <li class="chapter" data-level="4.2.2" data-path="chapter-structure.html"><a href="chapter-structure.html#what-not-to-include"><i class="fa fa-check"></i><b>4.2.2</b> What Not to Include</a></li>
 </ul></li>
 <li class="chapter" data-level="4.3" data-path="chapter-structure.html"><a href="chapter-structure.html#technical-supplements"><i class="fa fa-check"></i><b>4.3</b> Technical Supplements</a></li>
-<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a><ul>
+<li class="chapter" data-level="4.4" data-path="chapter-structure.html"><a href="chapter-structure.html#S:further-reading-and-resources"><i class="fa fa-check"></i><b>4.4</b> Contributors and Further Resources</a>
+<ul>
 <li class="chapter" data-level="4.4.1" data-path="chapter-structure.html"><a href="chapter-structure.html#contributors"><i class="fa fa-check"></i><b>4.4.1</b> Contributors</a></li>
 <li class="chapter" data-level="4.4.2" data-path="chapter-structure.html"><a href="chapter-structure.html#further-reading-and-references"><i class="fa fa-check"></i><b>4.4.2</b> Further Reading and References</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a><ul>
+<li class="chapter" data-level="5" data-path="ChapInteractive.html"><a href="ChapInteractive.html"><i class="fa fa-check"></i><b>5</b> Interactive Book Features</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#examples-and-exercises"><i class="fa fa-check"></i><b>5.1</b> Examples and Exercises</a></li>
 <li class="chapter" data-level="5.2" data-path="ChapInteractive.html"><a href="ChapInteractive.html#statistical-code"><i class="fa fa-check"></i><b>5.2</b> Statistical Code</a></li>
-<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a></li>
+<li class="chapter" data-level="5.3" data-path="ChapInteractive.html"><a href="ChapInteractive.html#other-interactive-features"><i class="fa fa-check"></i><b>5.3</b> Other Interactive Features</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="ChapInteractive.html"><a href="ChapInteractive.html#creating-and-modifying-end-of-the-section-quizzes"><i class="fa fa-check"></i><b>5.3.1</b> Creating and Modifying End of the Section Quizzes</a></li>
+</ul></li>
 <li class="chapter" data-level="5.4" data-path="ChapInteractive.html"><a href="ChapInteractive.html#additional-book-resources-supporting-each-chapter"><i class="fa fa-check"></i><b>5.4</b> Additional Book Resources Supporting Each Chapter</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a><ul>
+<li class="chapter" data-level="6" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html"><i class="fa fa-check"></i><b>6</b> Setting up a Glossary</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#csv-file-setup"><i class="fa fa-check"></i><b>6.1</b> csv File Setup</a></li>
-<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a><ul>
+<li class="chapter" data-level="6.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-definitions-by-chapter"><i class="fa fa-check"></i><b>6.2</b> Terms and Definitions by Chapter</a>
+<ul>
 <li class="chapter" data-level="6.2.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#chapter-1-introduction-to-loss-data-analytics"><i class="fa fa-check"></i><b>6.2.1</b> Chapter 1 Introduction to Loss Data Analytics</a></li>
 </ul></li>
 <li class="chapter" data-level="6.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#terms-and-chapter-first-defined"><i class="fa fa-check"></i><b>6.3</b> Terms and Chapter First Defined</a></li>
-<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a><ul>
+<li class="chapter" data-level="6.4" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#glossary-on-github"><i class="fa fa-check"></i><b>6.4</b> Glossary on GitHub</a>
+<ul>
 <li class="chapter" data-level="6.4.1" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#repository-creation-to-supplement-a-book"><i class="fa fa-check"></i><b>6.4.1</b> Repository Creation to Supplement a Book</a></li>
 <li class="chapter" data-level="6.4.2" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#feedback-from-reviewers-readers"><i class="fa fa-check"></i><b>6.4.2</b> Feedback from Reviewers/ Readers</a></li>
 <li class="chapter" data-level="6.4.3" data-path="setting-up-a-glossary.html"><a href="setting-up-a-glossary.html#collaboration-from-authors"><i class="fa fa-check"></i><b>6.4.3</b> Collaboration from Authors</a></li>
@@ -412,8 +452,8 @@ document.getElementById("defaultOpen").click();
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chapter-structure" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Chapter Structure</h1>
+<div id="chapter-structure" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Chapter Structure<a href="chapter-structure.html#chapter-structure" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <hr />
 <p>In this chapter, you learn how to:</p>
 <ul>
@@ -422,18 +462,18 @@ document.getElementById("defaultOpen").click();
 <li>Assess types of exercises and book resources that are appropriate for a chapter</li>
 </ul>
 <hr />
-<div id="chapter-preview-and-learning-objectives" class="section level2">
-<h2><span class="header-section-number">4.1</span> Chapter Preview and Learning Objectives</h2>
+<div id="chapter-preview-and-learning-objectives" class="section level2 hasAnchor" number="4.1">
+<h2><span class="header-section-number">4.1</span> Chapter Preview and Learning Objectives<a href="chapter-structure.html#chapter-preview-and-learning-objectives" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><em>Chapter Preview</em>. Begin with a chapter preview to set the stage of the chapter.</p></li>
 <li><p><em>Learning Objectives</em>. At the beginning of each chapter and section, describe in a few bullet points what the reader can expect to learn.</p></li>
 </ul>
 </div>
-<div id="main-body" class="section level2">
-<h2><span class="header-section-number">4.2</span> Main Body</h2>
+<div id="main-body" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Main Body<a href="chapter-structure.html#main-body" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Split the chapter into 4-7 sections; within each section, introduce 0-5 subsections. Do not develop a deeper hierarchy (e.g., a “sub-subsection”). Use nonlinear aspects of the web. For example, detailed mathematical developments can go into a technical appendix or are simply hidden (using javascript “hide/show” tools) unless the viewer really wants to see the details. Case studies and historical references can be included in “side-bars,” a supporting webpage. For the main body of the chapter, think about “25 pages” in length (whatever that means….).</p>
-<div id="what-to-include" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> What to Include</h3>
+<div id="what-to-include" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> What to Include<a href="chapter-structure.html#what-to-include" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Within the chapter, use boxed and numbered lists of procedures for easy reference.</p></li>
 <li><p>It is certainly okay (and expected) to use mathematical notation although please adhere to the conventions described in Section <a href="ChapNotationConvention.html#ChapNotationConvention">3</a>. Each chapter should have examples interwoven within theory, allowing readers to see the development of the theory along with the importance of the applications.</p></li>
@@ -443,8 +483,8 @@ document.getElementById("defaultOpen").click();
 <li><p>Include short exercises/examples/special cases that can be readily solved by the viewer (with solutions using “hide/show” features) within the main body. These serve to reinforce concepts and provide benchmarks for understanding.</p></li>
 </ul>
 </div>
-<div id="what-not-to-include" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> What Not to Include</h3>
+<div id="what-not-to-include" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> What Not to Include<a href="chapter-structure.html#what-not-to-include" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li><p>Do not include development of equations/formulas in the main body of the text. The main body of the text will be devoted to presenting results, providing context and intuition as to the importance of the results.</p></li>
 <li><p>Do not include references to the literature. This will appear in the last section on “Further Reading and References.”</p></li>
@@ -452,14 +492,14 @@ document.getElementById("defaultOpen").click();
 </ul>
 </div>
 </div>
-<div id="technical-supplements" class="section level2">
-<h2><span class="header-section-number">4.3</span> Technical Supplements</h2>
+<div id="technical-supplements" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Technical Supplements<a href="chapter-structure.html#technical-supplements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>We want our viewers to understand the underpinnings of the theory (the old analogy of “what is going on under the hood to see how the engine works” - no black boxes.) So, there will be occasions when you feel like a short development or “proof”; is reasonable. Put this in an appendix. Technical supplements should develop the theory in a step-by-step fashion, building on each concept in a crisp, mathematical fashion.</p>
 </div>
-<div id="S:further-reading-and-resources" class="section level2">
-<h2><span class="header-section-number">4.4</span> Contributors and Further Resources</h2>
-<div id="contributors" class="section level3">
-<h3><span class="header-section-number">4.4.1</span> Contributors</h3>
+<div id="S:further-reading-and-resources" class="section level2 hasAnchor" number="4.4">
+<h2><span class="header-section-number">4.4</span> Contributors and Further Resources<a href="chapter-structure.html#S:further-reading-and-resources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="contributors" class="section level3 hasAnchor" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Contributors<a href="chapter-structure.html#contributors" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Make sure that contributors are listed at the end of the chapter. The following provides an example.</p>
 <pre><code>#### Contributors {-}
 
@@ -470,8 +510,8 @@ suggested improvements. Helpful improvements provided by
 Alyaa Nuval Binti Othman and Aisha Nuval Binti Othman.
 </code></pre>
 </div>
-<div id="further-reading-and-references" class="section level3">
-<h3><span class="header-section-number">4.4.2</span> Further Reading and References</h3>
+<div id="further-reading-and-references" class="section level3 hasAnchor" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Further Reading and References<a href="chapter-structure.html#further-reading-and-references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Do not finish with a “preview of upcoming chapter”; finish instead with a “Further Reading and References.” This consists of a series of references with one or two lines of annotation for each reference that the interested reader could follow up on (self-citations are okay!). Historical developments are particularly nice in this section.</p>
 
 </div>
@@ -487,7 +527,6 @@ Alyaa Nuval Binti Othman and Aisha Nuval Binti Othman.
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -506,6 +545,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -526,6 +566,10 @@ gitbook.start({
 "text": null
 },
 "download": ["Style Guide for LDA.pdf", "Style Guide for LDA.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
 }

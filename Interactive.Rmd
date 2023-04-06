@@ -42,6 +42,38 @@ A wonderful aspect of an online text is that we can readily incorporate other in
 
 Some of the support material associated with the book also emphasizes interactive aspects. For example, detailed *R code* allows readers to learn complex statistical routines and provides sample code so that users can develop their own libraries of useful routines. Another site will feature `R-Shiny`, an interactive graphic tool that provides dynamic graphing features. The concept of active learning promotes one of the deeper learning goals set forth by some educational leaders: The ability to learn how to learn independently.
 
+### Creating and Modifying End of the Section Quizzes
+
+See [an example](https://openacttextdev.github.io/InteractiveFeatures/exercises-and-quizzes.html#Sec:EndSectionQuizzes) for what we mean by an "end of the section" quiz. 
+
+#### Create a Quiz
+
+We use [surveyJS](https://surveyjs.io/), an open source JavaScript form builder library, to build these interactive quizzes. In the book, we use two content delivery systems for interactive features:
+
+*   [unpkg](https://unpkg.com/) is a fast, global content delivery network.
+*   [cdnjs](https://cdnjs.com/about) is a free and open source content delivery network (cdn).
+
+For example, one can go to the [site](https://cdnjs.com/libraries/survey-jquery) for the code to access the *surveyJS* library.
+
+If you want to create quizzes from scratch, you can [start creating your own survey](https://surveyjs.io/create-free-survey).
+
+As alternatives, `R` has a number of packages for interactive learning. Probably the most widely known is [learnr](https://rdrr.io/cran/learnr/). However, this is a `shiny` based package that requires substantial bandwidth.
+
+Recently, an `R` package `webexercises` has been [developed](https://github.com/psyteachr/webexercises). It has fewer features than the `learnr` package but is more lightweight; "whereas {learnr} tutorials must be either hosted on a shiny server or run locally, `webexercises` creates standalone HTML files that require only a JavaScript-enabled browser."
+
+We continue to use the *surveyJS* framework at this time because it is has a nice output for users. Note however that is more difficult to maintain and so we may switch to `webexercises` in the future.
+
+
+#### Modifying a Quiz
+
+All of the javascript functions are defined in the `ShowHide2022.js` file - most authors will not need to change this.
+
+In the `Quiz` folder, you will find `html` files that refer to each end of the section quiz, e.g., `Quiz11.html` refers to quiz at the end of Section 1.1 (in Chapter 1). These files provide a bit of html code to display the quiz.
+
+Also in the `Quiz` folder is a subfolder `QuizJavaScript`. Here are  javascript files, again one for each end of the section quiz, e.g., `Quiz11.js` refers to quiz at the end of Section 1.1 (in Chapter 1). These files provide the quiz questions in a very specific format required by *surveyJS*. It is not very flexible and difficult to  alter the structure (without a good background in Javascript). However, the .js files are all text-based, and so are easy to modify, for authors interested only in updating/improving end of the section quizzes.
+
+
+
 
 ## Additional Book Resources Supporting Each Chapter
 
